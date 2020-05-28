@@ -1,0 +1,128 @@
+$letterKeyColor: #233249;
+$lettersColor: #dfcfcf;
+$functionalKeyColor: #1c232e;
+$activeKeyColor: #405d8a;
+$activeCaps: $lettersColor;
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background:  $letterKeyColor;
+}
+
+form {
+	margin: 25px auto;
+	box-sizing: border-box;
+	text-align: center;
+
+	.output__textarea {
+		width: 880px;
+		height: 132px;
+		box-sizing: border-box;
+		padding: 10px;
+		margin: 5px 0;
+		border-radius: 5px;
+		background: $lettersColor;
+	}
+
+	.keyboard {
+		width: 880px;
+		height: 304px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		.key {
+			height: 54px;
+			box-sizing: border-box;
+			border: none;
+			border-radius: 5px;
+			color: $lettersColor;
+			border: 1px solid $lettersColor;
+			font-size: 18px;
+			
+			&:hover {
+				background: $activeKeyColor;
+			}
+
+			&__letter {
+				width: 54px;
+				background: $letterKeyColor;
+			}
+
+			&__func {
+				background: $functionalKeyColor;
+			}
+
+			&__backspace {
+				width: 128px;
+			}
+
+			&__tab {
+				width: 66px;
+			}
+
+			&__del {
+				width: 56px;
+			}
+
+			&__caps {
+				width: 128px;
+			}
+
+			&__enter {
+				width: 114px;
+			}
+
+			&__l-shift {
+				width: 128px;
+			}
+			
+			&__arrow {
+				width: 54px;
+			}
+
+			&__r-shift {
+				width: 56px;
+			}
+
+			&__ctrl {
+				width: 82px;
+			}
+
+			&__win-alt {
+				width: 54px;
+			}
+			
+			&__en-ru {
+				width: 70px;
+			}
+
+			&__space {
+				background: $letterKeyColor;
+				width: 358px;
+			}
+		}
+
+	}
+
+	.active {
+		transition: 0.1s;
+		background: $activeKeyColor !important;
+	}
+
+	p {
+		font-size: 18px;
+		font-family: sans-serif;
+		color: $lettersColor;
+	}
+
+	.capsLock {
+		background: $activeCaps !important; 
+		color: $letterKeyColor !important; 
+	}
+}
