@@ -34,7 +34,7 @@
 - usage of Angular/React/Vue and other frameworks is **not allowed**
 - you can use CSS preprocessors
 - [ESLint (eslint-config-airbnb-base)](https://eslint.org/) should be used
-- the working application should be hosted on [GitHub Pages](https://pages.github.com/). It happens automatically on 'gh-pages' branch creation. Afterward, the page will be available at the address like https://your-github-account.github.io/name-of-your-repository
+- the working application should be hosted on [GitHub Pages](https://pages.github.com/). It happens automatically on 'gh-pages' branch creation. Afterward, the page will be available at the address like http://mumplini.github.io/virtual-keyboard
 
 ### Requirements for commits, pull request, repository
 - the work should be done in your private repository
